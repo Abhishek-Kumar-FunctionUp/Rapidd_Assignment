@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap");
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 2vh;
+}
+
+.title {
+  margin: 5.3333vh 0vw;
+  font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
+  color: #003057;
+}
+
+.titleBold {
+  font-weight: 900;
+}
+
+.contact {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  align-items: center;
+}
+
+.leftText {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #262628;
+  font-size: 1rem;
+  margin-bottom: 4vh;
+}
+
+.linksContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+}
+
+.links {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  padding: 1.2rem 1.2rem;
+}
+
+.links p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5vw;
+}
+
+.linksContainer .icons {
+  font-size: 1.5rem;
+}
+
+.mail {
+  background-color: #003057;
+  color: white;
+  border: 1px solid #003057;
+}
+
+.link,
+.location {
+  background-color: white;
+  color: #003057;
+  border: 1px solid #003057;
+}
+
+.mail,
+.link,
+.location:hover {
+  cursor: pointer;
+}
+
+.imageSection {
+  margin: 6vh 0vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25vw;
+  width: fit-content;
+}
+
+.imageSectionLeft {
+  background-color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.imageSectionLink {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25vw;
+  color: #003057;
+  padding: 2.5vh 0vw;
+}
+
+.imageSectionLink:hover {
+  cursor: pointer;
+}
+
+.imageSectionLink p {
+  display: flex;
+  align-items: center;
+  gap: 0.3vw;
+}
+
+.imageSectionLink .icons {
+  font-size: 1rem;
+}
+
+.imageSectionRight {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+.imageSectionRightTop {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height: 14vh; */
+  gap: 2.22vh;
+  padding: 1rem;
+}
+
+.imageSectionRightTopText {
+  font-size: 1rem;
+  color: #262628;
+  font-weight: 400;
+}
+
+.imageSectionRightTopText span {
+  font-weight: 700;
+}
+
+.imageSectionRightMiddleText {
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: #003057;
+}
+
+.imageRight {
+  background-color: #ffffff;
+}
+
+.imageSectionRightBottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1.25vw;
+  align-items: center;
+}
+
+.imageSectionRightBottom button {
+  background-color: #003057;
+  color: white;
+  font-weight: 700;
+  font-size: 0.875rem;
+  border: 1px solid #003057;
+  border-radius: 48px;
+  padding: 0.74vh 0.83vw;
+}
+
+.imageSectionRightBottom button:hover {
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #003057;
+}
+
+.imageSectionRightBottom p {
+  width: 20vw;
+  text-align: center;
+  line-height: 2.22vh;
+  line-height: 24px;
+}
+
+a {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #003057;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1140px) {
+  .contact {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .leftText,
+  .imageSectionRightTopText {
+    font-size: 0.8rem;
+  }
+
+  .links {
+    font-size: 1rem;
+  }
+
+  .imageSection {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25vw;
+  }
+
+  .imageSectionLeft,
+  a,
+  .imageSectionRightBottom {
+    font-size: 0.8rem;
+  }
+
+  .imageSectionRightMiddleText {
+    font-size: 1.2rem;
+  }
+}

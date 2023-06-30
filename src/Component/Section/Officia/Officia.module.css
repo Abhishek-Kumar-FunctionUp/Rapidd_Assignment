@@ -1,0 +1,78 @@
+.main {
+  background-color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 6vh;
+}
+
+.title {
+  padding: 1.25vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title p {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #262628;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1.25vw;
+  padding: 1.25vw;
+}
+
+.card {
+  background-color: #f9f9f9;
+  padding: 1.25vw;
+  width: 20.5vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25vw;
+  text-align: center;
+}
+
+.card p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25vw;
+}
+
+@media only screen and (max-width: 870px) {
+  .title p {
+    font-size: 1.2rem;
+  }
+
+  .card p {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .cardContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card {
+    width: 45vw;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .cardContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    width: 100vw;
+  }
+}

@@ -1,0 +1,71 @@
+.main {
+  font-family: "Montserrat", sans-serif;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  gap: 1.25vw;
+  padding: 2.5vw 1.25vw;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 900;
+}
+
+.lorem {
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
+}
+
+.loremText,
+.loremTextCart {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  font-size: 0.8rem;
+}
+
+.loremTextCart p {
+  display: flex;
+  font-weight: 700;
+  color: #003057;
+  gap: 0.5vw;
+}
+
+.bottom {
+  background-color: #003057;
+  color: #ffffff;
+  padding: 1.25vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottomHeading {
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 10vh;
+}
+
+.bottomText {
+  font-size: 0.8rem;
+  line-height: 4vh;
+}
+
+.loremText,
+.loremTextCart:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 870px) {
+  .main {
+    display: none;
+  }
+}
